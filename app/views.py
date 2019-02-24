@@ -2,7 +2,7 @@ from flask import render_template
 
 from app import app
 
-app.route('/templates')
+@app.route('/')
 def index():
     title = 'Welcome to the best Movie Review website'
     return render_template('index.html',title = title)
