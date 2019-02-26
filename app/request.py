@@ -5,7 +5,7 @@ from .models import movie
 Movie = movie.Movie
 
 api_key = app.config['MOVIE_API_KEY']
-base_url = app.config("MOVIE_API_BASE_URL")
+base_url = app.config["MOVIE_API_BASE_URL"]
 
 def get_movies(category):
     get_movies_url = base_url.format(category, api_key)
